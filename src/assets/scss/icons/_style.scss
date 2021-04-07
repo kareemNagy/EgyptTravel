@@ -1,0 +1,95 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zfnvef');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?zfnvef#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?zfnvef') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?zfnvef') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?zfnvef##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="eta-ico-"], [class*=" eta-ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.eta-ico-play {
+  &:before {
+    content: $eta-ico-play; 
+  }
+}
+.eta-ico-weather {
+  &:before {
+    content: $eta-ico-weather; 
+  }
+}
+.eta-ico-menu {
+  &:before {
+    content: $eta-ico-menu; 
+  }
+}
+.eta-ico-Iceland {
+  &:before {
+    content: $eta-ico-Iceland; 
+  }
+}
+.eta-ico-thermometer {
+  &:before {
+    content: $eta-ico-thermometer; 
+  }
+}
+.eta-ico-volume {
+  &:before {
+    content: $eta-ico-volume; 
+  }
+}
+.eta-ico-arrow-backward {
+  &:before {
+    content: $eta-ico-arrow-backward; 
+  }
+}
+.eta-ico-arrow-forward {
+  &:before {
+    content: $eta-ico-arrow-forward; 
+  }
+}
+.eta-ico-close {
+  &:before {
+    content: $eta-ico-close; 
+  }
+}
+.eta-ico-head-bottom-arrow {
+  &:before {
+    content: $eta-ico-head-bottom-arrow; 
+  }
+}
+.eta-ico-pause {
+  &:before {
+    content: $eta-ico-pause; 
+  }
+}
+.eta-ico-pin {
+  &:before {
+    content: $eta-ico-pin; 
+  }
+}
+.eta-ico-scroll {
+  &:before {
+    content: $eta-ico-scroll; 
+  }
+}
+
