@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "egypttravel-b185a": {
+      "hosting": {
+        "EgyptTravel": [
+          "egypttravel-b185a"
+        ]
+      }
+    }
+  }
+}

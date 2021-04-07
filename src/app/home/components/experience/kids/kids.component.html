@@ -1,0 +1,48 @@
+<div class="swiper-slide-content content-type-2 " *ngIf="visibility">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}" data-swiper-parallax="-300">Expereince</div>
+                <!-- sub titles -->
+                <div class="kids-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="subtitle " data-swiper-parallax="-200">Kids World</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- short note -->
+
+                <div class="kids-section ">
+                    <div class="text " data-swiper-parallax="-100"> Short tag to describe kids world</div>
+                </div>
+
+                <!-- counter -->
+
+                <div class="kids-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="d-flex  align-items-center kids-learn my-3 " data-swiper-parallax="-100">
+                        <div class="kids-item d-flex flex-column justify-content-center align-items-center me-4">
+                            <img src="assets/svg/001-toy.svg" />
+                            <p>Play With Us</p>
+                        </div>
+                        <div class="kids-item d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/svg/002-drawing.svg" />
+                            <p>Learn & Enjoy</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  exp button -->
+
+                <div class="kids-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <a class="btn btn-secondary mb-4" href="/kids" data-swiper-parallax="-100">Experience More </a>
+                </div>
+                <!-- main nav -->
+                <app-experience-navigation></app-experience-navigation>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" kids-section kids-section-bg {{visibility ? 'fadeIn' : 'fadeOut'}}" *ngIf="visibility">
+    <div class="slider-bg" data-swiper-parallax-x="30%" style="background-image: url('assets/bg5.jpg');"></div>
+</div>

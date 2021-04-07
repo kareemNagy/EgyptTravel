@@ -31,6 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/animate.min.css",
+              "src/assets/css/jquery.fancybox.min.css",
+              "src/assets/css/swiper-bundle.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +126,10 @@
               "devServerTarget": "EgyptTravel:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
