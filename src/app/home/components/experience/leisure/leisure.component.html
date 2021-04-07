@@ -1,0 +1,66 @@
+<div class="swiper-slide-content content-type-2 " *ngIf="visibility">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}" data-swiper-parallax="-300">Expereince</div>
+                <!-- sub titles -->
+
+                <div class="leisure-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="subtitle " data-swiper-parallax="-200">Leisure & Adventure</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- short note -->
+
+                <div class="leisure-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="text " data-swiper-parallax="-100"> Short tag to describe leisure and adventure</div>
+                </div>
+
+
+                <!-- counter -->
+
+                <div class="leisure-section leisure-section-counter {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="d-flex justify-content-between align-items-center counter-wrp " data-swiper-parallax="-100">
+                        <div class="counter-data">
+                            <p class="count">3451</p>
+                            <small>Activities</small>
+                        </div>
+                        <div class="counter-data">
+                            <p class="count">25125</p>
+                            <small>Hotels </small>
+                        </div>
+
+                        <div class="counter-data">
+                            <p class="count">150</p>
+                            <small>Rooms</small>
+                        </div>
+                        <div class="counter-data">
+                            <p class="count">5462</p>
+                            <small>Trips/Daily</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  exp button -->
+
+                <div class="leisure-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <a class="btn btn-secondary mb-4 " href="/leisure" data-swiper-parallax="-100">Experience More </a>
+                </div>
+
+                <!-- main nav -->
+                <app-experience-navigation></app-experience-navigation>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="leisure-section leisure-section-bg {{visibility ? 'fadeIn' : 'fadeOut'}}" *ngIf="visibility">
+    <div class="slider-bg " data-swiper-parallax-x="30%" style="background-image: url('assets/bg3.jpg');"></div>
+    <video data-swiper-parallax-x="30%" data-swiper-parallax-duration="500" autoplay loop muted>
+                        <source src="assets/video/Video 3 Lesuire and adventure_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+</div>

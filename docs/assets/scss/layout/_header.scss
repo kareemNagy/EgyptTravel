@@ -1,0 +1,143 @@
+header {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.c-19 {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+    p {
+        margin: 0;
+        @include font-size(16px);
+        font-family: Lato;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 38%;
+    left: 2%;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.menu-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 88;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        margin-right: 15px;
+        padding: 0 22px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 1px;
+            height: 63%;
+            background: #fff;
+            opacity: 0.46;
+            right: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                content: '';
+                width: 1px;
+                height: 63%;
+                background: transparent;
+                opacity: 0.46;
+                right: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &.user-actions {
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.lang-switcher {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 5px 12px;
+    &:hover {
+        text-decoration: none !important;
+        background: rgba(255, 255, 255, 0.50);
+    }
+}
+
+.rotate-arrow {
+    img {
+        transition: all 1s;
+    }
+    &.active {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.hide-menu {
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid #fff;
+    display: none;
+    li {
+        margin: 0;
+        padding: 0;
+        &:after {
+            content: none;
+        }
+        a {
+            padding: 5px 12px;
+            width: 100%;
+            display: block;
+            transition: all 1s;
+            &:hover {
+                background: rgba(255, 255, 255, 0.50);
+                text-decoration: none;
+            }
+        }
+    }
+}

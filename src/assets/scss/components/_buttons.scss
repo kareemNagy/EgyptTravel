@@ -1,0 +1,22 @@
+.btn {
+    @include font-size(16px);
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-primary {
+    @include rfs(10px, margin-right);
+}
+
+.btn-secondary {
+    background: $dark-primary;
+    border: 0;
+    &:hover {
+        background-color: #121b2f;
+        border-color: #121b2f;
+    }
+}

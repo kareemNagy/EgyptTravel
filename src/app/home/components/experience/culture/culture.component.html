@@ -1,0 +1,57 @@
+<div class="swiper-slide-content content-type-2" *ngIf="visibility">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}" data-swiper-parallax="-300">Expereince</div>
+                <!-- sub titles -->
+                <div class="culture-section">
+                    <div class="subtitle {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}" data-swiper-parallax="-200">Culture</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- short note -->
+                <div class="culture-section">
+                    <div class="text {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}" data-swiper-parallax="-100"> The largest museum all over the world!</div>
+                </div>
+
+
+                <!-- counter -->
+                <div class="culture-section culture-section-counter {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <div class="d-flex justify-content-between align-items-center counter-wrp " data-swiper-parallax="-100">
+                        <div class="counter-data">
+                            <p class="count">113657</p>
+                            <small>Sites</small>
+                        </div>
+                        <div class="counter-data">
+                            <p class="count">65214</p>
+                            <small>Monuments </small>
+                        </div>
+
+                        <div class="counter-data">
+                            <p class="count">5462</p>
+                            <small>Museums</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  exp button -->
+                <div class="culture-section {{visibility ? 'animate__animated animate__fadeInRight': 'animate__animated animate__fadeOutLeft'}}">
+                    <a class="btn btn-secondary mb-4 " href="/culture" data-swiper-parallax="-100">Experience More </a>
+                </div>
+
+                <!-- main nav -->
+                <app-experience-navigation></app-experience-navigation>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="culture-section culture-section-bg {{visibility ? 'fadeIn' : 'fadeOut'}}" *ngIf="visibility">
+    <div class="slider-bg " data-swiper-parallax-x="30%" style="background-image: url('assets/bg2.jpg');"></div>
+    <video data-swiper-parallax-x="30%" data-swiper-parallax-duration="500" autoplay loop muted>
+                        <source src="assets/video/Video 2 Monuments and templates.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+</div>

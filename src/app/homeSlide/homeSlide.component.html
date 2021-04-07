@@ -1,0 +1,41 @@
+<div class="swiper-container swiper-container-main" [swiper]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange($event)">
+    <div class="swiper-wrapper">
+        <div class="footer swiper-slide-main" style="background: rgb(18, 131, 198)">
+            <div class="circle-shape " style="transform:translate(-118%, -77%);z-index: 3;">
+                <div data-swiper-parallax-x="50%" class="slider-bg" data-swiper-parallax-duration="500" style="background-image: url('assets/layout-svg/c1.svg');"></div>
+
+            </div>
+
+            <div class="swiper-slide-content content-type-2 ">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="subtitle" data-swiper-parallax="-300">Newsletter</div>
+                            <div class="text" data-swiper-parallax="-200">Subscribe and get monthly updates</div>
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Enter Your Email" />
+                                <a href="#" class="news-ubscribe">Subscribe</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/images/Group 13562.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-swiper-parallax="30%" class="slider-bg" style="z-index: 4;background-image: url('assets/bg6.jpg'); background-size: contain; background-position: right;"></div>
+        </div>
+        <app-pyramid class="pyramid swiper-slide {{ common.exp[3].visibility ? 'kids-pyramid':''}}" style="left:62vw"></app-pyramid>
+        <app-welcome class="swiper-slide-main swiper-slide" [videoStatus]="videoStatusW"></app-welcome>
+        <app-experience class="swiper-slide-main swiper-slide" [videoStatus]="videoStatusE"></app-experience>
+        <app-discover class="swiper-slide-main swiper-slide" [activeSlide]="activeSlide"></app-discover>
+        <app-you-visit class="swiper-slide-main swiper-slide" style="background: linear-gradient(90deg, rgba(29,43,76,1) 37%, #1283C6 37%, #1283C6 100%);"></app-you-visit>
+        <app-whatson class="swiper-slide-main swiper-slide"></app-whatson>
+        <app-media class="swiper-slide-main swiper-slide"></app-media>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,105 @@
+footer {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1D2B4C;
+    padding: 25px 0;
+    ;
+    .footer-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-right: 40px;
+            width: auto;
+            height: auto;
+            background: transparent;
+            color: #fff;
+            border-radius: 0;
+            opacity: 1;
+            outline: 0;
+            text-transform: uppercase;
+            font-family: Lato;
+            &.swiper-pagination-bullet-active {
+                color: #00C2FF;
+            }
+        }
+    }
+}
+
+.chat-wrp {
+    position: absolute;
+    right: 0;
+    top: -57px;
+    width: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.chat-bot {
+    width: 79px;
+    height: 79px;
+}
+
+.footer {
+    background: $primary;
+    position: absolute;
+    top: 0;
+    left: calc(6 * 100vw);
+    bottom: 0;
+    height: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input-wrap {
+    background: rgba(0, 0, 0, 0.33);
+    position: relative;
+    padding: 14px 24px;
+    margin-top: 50px;
+    input {
+        background: transparent;
+        border: 0;
+        width: 100%;
+        color: #fff;
+        @include font-size(20px);
+        font-family: Lato;
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1;
+            /* Firefox */
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #fff;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    .news-ubscribe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 35px;
+        @include font-size(16px);
+        font-weight: bold;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

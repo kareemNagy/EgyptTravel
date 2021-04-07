@@ -1,0 +1,7 @@
+<div class="d-flex align-items-start" data-swiper-parallax="-100">
+    <a href="#" (click)="switchExpereince($event, item.id)" class="exp-item {{item.visibility ? 'exp-item-active':''}}" *ngFor="let item of exp">
+        <img [src]="item.img" />
+        <p> {{item.title}}</p>
+
+    </a>
+</div>
