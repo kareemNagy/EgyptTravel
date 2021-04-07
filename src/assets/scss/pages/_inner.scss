@@ -41,6 +41,9 @@
     .skew-inner-content {
         transform: skewX( 36deg);
     }
+    &.skew-inner-pyrmid {
+        background: #924F82;
+    }
 }
 
 .culture-section-inner {
@@ -72,7 +75,7 @@
         margin-bottom: 15px;
     }
     .subtitle {
-        @include font-size(90px);
+        @include font-size(80px);
         @include rfs(80px, line-height);
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         font-weight: bold

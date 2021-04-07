@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SwiperModule, SWIPER_CONFIG, SwiperConfigInterface } from 'ngx-swiper-wrapper';
-import { HomeComponent } from './home.component';
-import { WelcomeModule } from './components/welcome/welcome.module';
-import { ExperienceModule } from './components/experience/experience.module';
-import { DiscoverModule } from './components/discover/discover.module';
-import { YouVisitModule } from './components/you-visit/you-visit.module';
-import { MediaModule } from './components/media/media.module';
-import { WhatsonModule } from './components/whatson/whatson.module';
-import { PyramidModule } from './components/pyramid/pyramid.module';
+
+
 import { FooterComponent } from '../shared/layouts/footer/footer.component';
+import { HomeSlideComponent } from './homeSlide.component';
+import { DiscoverModule } from '../home/components/discover/discover.module';
+import { ExperienceModule } from '../home/components/experience/experience.module';
+import { MediaModule } from '../home/components/media/media.module';
+import { PyramidModule } from '../home/components/pyramid/pyramid.module';
+import { WelcomeModule } from '../home/components/welcome/welcome.module';
+import { WhatsonModule } from '../home/components/whatson/whatson.module';
+import { YouVisitModule } from '../home/components/you-visit/you-visit.module';
 import { FooterModule } from '../shared/layouts/footer/footer.module';
 
 
@@ -29,10 +31,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     MediaModule,
     WhatsonModule,
     PyramidModule,
-    FooterModule
+    FooterModule,
   ],
-  declarations: [HomeComponent],
-  exports: [SwiperModule, HomeComponent],
+  declarations: [HomeSlideComponent],
+  exports: [SwiperModule],
   providers: [
     {
       provide: SWIPER_CONFIG,
@@ -40,4 +42,4 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     }
   ]
 })
-export class HomeModule { }
+export class HomeSlideModule { }

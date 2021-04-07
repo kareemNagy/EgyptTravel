@@ -1,10 +1,10 @@
-<img class="menu-open" style="display:none" src="assets/images/footer.jpg" />
+<img class="menu-open" *ngIf="menu" (click)="toggleMenu()" src="assets/images/footer.jpg" />
 <header>
-    <div class="c-19 bg-primary py-1">
+    <div class="c-19 bg-primary py-1" *ngIf="covid">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center ">
                 <p>Your health matter. Read our COVID-19 travel guidelines.</p>
-                <a href="#">
+                <a (click)="toggleCovid()">
                     <img class="close" src="assets/svg/close.svg" />
                 </a>
             </div>
@@ -12,7 +12,7 @@
 
     </div>
     <div class="d-flex position-relative mt-3">
-        <a class="align-items-center d-flex justify-content-between menu" href="#">
+        <a class="align-items-center d-flex justify-content-between menu" (click)="toggleMenu()">
             <img class="me-3" src="assets/svg/Menu.svg" />
         </a>
         <div class="container">
